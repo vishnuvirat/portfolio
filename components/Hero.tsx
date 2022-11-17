@@ -6,7 +6,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="flex items-center justify-center h-screen flex-col space-y-8 ">
+    <div className="flex items-center justify-center h-screen flex-col space-y-8 text-center overflow-hidden">
       <BackgroundCircle/>
       <Typewriter
         options={{
