@@ -39,7 +39,21 @@ const Header = (props: Props) => {
           bgColor="transparent"
         />
       </motion.div>
-      <div className="flex flex-row items-center">
+      <motion.div
+      initial={{
+        x:500,
+        opacity:0,
+        scale:0.5,
+      }}
+      animate={{
+        x:0,
+        opacity:1,
+        scale:1,
+      }}
+      transition={{
+        duration:1.5,
+      }}
+      className="flex flex-row items-center">
         <SocialIcon
           url="https://twitter.com/jaketrent"
           fgColor="gray"
@@ -48,7 +62,7 @@ const Header = (props: Props) => {
         <div className="hidden md:inline-flex text-sm items-center text-gray-400 capitalize">
           Get in touch
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
