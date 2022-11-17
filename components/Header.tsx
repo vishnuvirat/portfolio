@@ -24,17 +24,17 @@ const Header = (props: Props) => {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://github.com/vishnuvirat"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://www.facebook.com/vishnu.chiluveri.3"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://www.linkedin.com/in/vishnu-chiluveri-270669205/"
           fgColor="gray"
           bgColor="transparent"
         />
@@ -55,7 +55,7 @@ const Header = (props: Props) => {
       }}
       className="flex flex-row items-center">
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://www.instagram.com/_bad_captain__0_0/?next=%2Fgdsc_au%2F"
           fgColor="gray"
           bgColor="transparent"
         />

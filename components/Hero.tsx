@@ -17,20 +17,30 @@ const Hero = (props: Props) => {
         alt=""
       />
 
-      <div className="text-sm uppercase tracking-[15px] text-gray-500 pb-2 ">Software Engineer</div>
-      <div className="text-4xl lg:text-6xl font-semibold tracking-wide">
-        <Typewriter
-          options={{
-            strings: [
-              "Hi! Iam Vishnu",
-              "Code Blooded",
-              "But Loves To Code more",
-            ],
-            autoStart: true,
-            loop: true,
-            delay: 100
-          }}
-        />
+      <div className="z-20">
+        <div className="text-sm uppercase tracking-[15px] text-gray-500 pb-2">
+          Software Engineer
+        </div>
+        <div className="text-4xl lg:text-6xl font-semibold tracking-wide">
+          <Typewriter
+            options={{
+              strings: [
+                "Hi! Iam Vishnu",
+                "Code Blooded",
+                "But Loves To Code more",
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 100,
+            }}
+          />
+        </div>
+        <div className="pt-5">
+          <button className="herobutton">About</button>
+          <button className="herobutton">Experience</button>
+          <button className="herobutton">Skills</button>
+          <button className="herobutton">Projects</button>
+        </div>
       </div>
     </div>
   );
