@@ -14,17 +14,21 @@ const Hero = (props: Props) => {
         src="/vishnu.jpg"
         height="500"
         width="500"
+        alt=""
       />
-      <div>
+
+      <div className="text-sm uppercase tracking-[15px] text-gray-500 pb-2 ">Software Engineer</div>
+      <div className="text-4xl lg:text-6xl font-semibold tracking-wide">
         <Typewriter
           options={{
             strings: [
               "Hi! Iam Vishnu",
               "Code Blooded",
-              "<But Loves To Code more/>",
+              "But Loves To Code more",
             ],
             autoStart: true,
             loop: true,
+            delay: 100
           }}
         />
       </div>
