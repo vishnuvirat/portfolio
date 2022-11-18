@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import About from '../components/About'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 
@@ -10,7 +11,8 @@ export default function Home() {
         <title>Vishnu Portfolio</title>
       </Head>
         <Header/>
-        <div className='snap-center'><Hero/></div>
+        <div className='snap-start'><Hero/></div>
+        <div className='snap-center'><About/></div>
     </div>
   )
 }
