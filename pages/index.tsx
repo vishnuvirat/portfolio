@@ -11,8 +11,8 @@ export default function Home() {
         <title>Vishnu Portfolio</title>
       </Head>
         <Header/>
-        <div className='snap-start'><Hero/></div>
-        <div className='snap-center'><About/></div>
+        <div id='#hero' className='snap-start'><Hero/></div>
+        <div id='#about' className='snap-center'><About/></div>
     </div>
   )
 }

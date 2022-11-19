@@ -2,6 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import BackgroundCircle from "./BackgroundCircle";
 import Image from "next/image";
+import Link from 'next/link'
 
 type Props = {};
 
@@ -36,10 +37,10 @@ const Hero = (props: Props) => {
           />
         </div>
         <div className="pt-5">
-          <button className="herobutton">About</button>
-          <button className="herobutton">Experience</button>
-          <button className="herobutton">Skills</button>
-          <button className="herobutton">Projects</button>
+          <Link href='#about'><button className="herobutton">About</button></Link>
+          <Link href='#experience'><button className="herobutton">Experience</button></Link>
+          <Link href='#skills'><button className="herobutton">Skills</button></Link>
+          <Link href='#projecs'><button className="herobutton">Projects</button></Link>
         </div>
       </div>
     </div>

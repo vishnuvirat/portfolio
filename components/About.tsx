@@ -7,13 +7,19 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <div className="h-screen flex flex-col md:flex-row relative text-center md:text-left max-w-7xl mx-auto justify-evenly px-10 items-center">
-      <div className="tracking-[20px] text-gray-500 text-2xl absolute top-24 uppercase">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        className="tracking-[20px] text-gray-500 text-2xl absolute top-24 uppercase"
+      >
         About
-      </div>
+      </motion.div>
       <motion.div
         className=""
         initial={{
           x: -200,
+          opacity:0,
         }}
         transition={{
           duration: 1.5,
