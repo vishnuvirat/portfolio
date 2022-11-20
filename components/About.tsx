@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -19,7 +20,7 @@ const About = (props: Props) => {
         className=""
         initial={{
           x: -200,
-          opacity:0,
+          opacity: 0,
         }}
         transition={{
           duration: 1.5,
