@@ -26,7 +26,7 @@ const Hero = (props: Props) => {
           <Typewriter
             options={{
               strings: [
-                "Hi! Iam Vishnu",
+                "Hi! I'm Vishnu",
                 "Code Blooded",
                 "But Loves To Code more",
               ],
