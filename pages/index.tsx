@@ -2,6 +2,7 @@ import Head from 'next/head'
 import About from '../components/About'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import Experience from '../components/Ex'
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <Header/>
         <div id='hero' className='snap-start'><Hero/></div>
         <div id='about' className='snap-center'><About/></div>
+        <Expe
     </div>
   )
 }
