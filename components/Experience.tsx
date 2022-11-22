@@ -16,7 +16,12 @@ const Experience = (props: Props) => {
         Experience
       </motion.div>
 
-      <ExperienceCard/>
+      <div className="flex w-full space-x-5 p-10 snap-x snap-mandatory overflow-x-scroll">
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+      </div>
     </div>
   );
 };
