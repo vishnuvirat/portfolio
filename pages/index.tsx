@@ -21,7 +21,7 @@ export default function Home() {
       <div id="experience" className="snap-center">
         <Experience />
       </div>
-      <div>
+      <div id="skills" className="snap-center">
         <Skills />
       </div>
     </div>
