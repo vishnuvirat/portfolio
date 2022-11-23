@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -21,8 +22,11 @@ export default function Home() {
       <div id="experience" className="snap-center">
         <Experience />
       </div>
-      <div id="skills" className="snap-center">
+      <div id="skills" className="snap-start">
         <Skills />
+      </div>
+      <div id="projects" className="snap-center">
+        <Projects />
       </div>
     </div>
   );
