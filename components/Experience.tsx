@@ -16,7 +16,7 @@ const Experience = (props: Props) => {
         Experience
       </motion.div>
 
-      <div className="flex w-full space-x-5 p-10 snap-x snap-mandatory overflow-x-scroll">
+      <div className="flex w-full space-x-5 p-10 snap-x snap-mandatory overflow-x-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         <ExperienceCard />
         <ExperienceCard  />
         <ExperienceCard />
