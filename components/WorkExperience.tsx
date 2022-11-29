@@ -4,7 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 
-const Experience = (props: Props) => {
+const WorkExperience = (props: Props) => {
   return (
     <div className="h-screen flex flex-col relative overflow-hidden text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <motion.div
@@ -26,4 +26,4 @@ const Experience = (props: Props) => {
   );
 };
 
-export default Experience;
+export default WorkExperience;

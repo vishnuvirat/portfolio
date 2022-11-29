@@ -2,12 +2,23 @@ import Head from "next/head";
 import About from "../components/About";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import Experience from "../components/Experience";
+import WorkExperience from "../components/WorkExperience";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import ContactMe from "../components/ContactMe";
 import Image from "next/image";
 import Link from "next/link";
+import {PageInfo, Experience, Project, Skill, Socials} from '../pages/api/typings'
+
+
+
+type Props = {
+  pageInfo: PageInfo;
+  experiences:Experience[];
+  skills:Skill[];
+  projects:Project[];
+  socials:Socials[];
+}
 
 export default function Home() {
   return (
@@ -23,7 +34,7 @@ export default function Home() {
         <About />
       </div>
       <div id="experience" className="snap-center">
-        <Experience />
+        <WorkExperience />
       </div>
       <div id="skills" className="snap-start">
         <Skills />
