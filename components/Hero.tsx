@@ -2,11 +2,14 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import BackgroundCircle from "./BackgroundCircle";
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
+import { PageInfo } from "../pages/api/typings";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-const Hero = (props: Props) => {
+const Hero = ({pageInfo}: Props) => {
   return (
     <div className="flex items-center justify-center h-screen flex-col space-y-8 text-center overflow-hidden">
       <BackgroundCircle />
@@ -26,7 +29,7 @@ const Hero = (props: Props) => {
           <Typewriter
             options={{
               strings: [
-                "Hi! I'm Vishnu",
+                `Hi! I'm ${pageInfo?.name}`,
                 "Code Blooded",
                 "But Loves To Code more",
               ],
@@ -37,10 +40,18 @@ const Hero = (props: Props) => {
           />
         </div>
         <div className="pt-5">
-          <Link href='#about'><button className="herobutton">About</button></Link>
-          <Link href='#experience'><button className="herobutton">Experience</button></Link>
-          <Link href='#skills'><button className="herobutton">Skills</button></Link>
-          <Link href='#projecs'><button className="herobutton">Projects</button></Link>
+          <Link href="#about">
+            <button className="herobutton">About</button>
+          </Link>
+          <Link href="#experience">
+            <button className="herobutton">Experience</button>
+          </Link>
+          <Link href="#skills">
+            <button className="herobutton">Skills</button>
+          </Link>
+          <Link href="#projecs">
+            <button className="herobutton">Projects</button>
+          </Link>
         </div>
       </div>
     </div>

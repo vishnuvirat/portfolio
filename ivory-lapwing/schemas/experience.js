@@ -17,7 +17,7 @@ export default {
 
     {
       name: "companyImage",
-      title: "CompnayImage",
+      title: "CompanyImage",
       type: "image",
       options: {
         hotspot: true,
