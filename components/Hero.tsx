@@ -15,7 +15,7 @@ const Hero = ({pageInfo}: Props) => {
       <BackgroundCircle />
       <Image
         className="relative rounded-full mx-auto object-cover h-32 w-32"
-        src="/vishnu.jpg"
+        src={"/vishnu.jpg"}
         height="500"
         width="500"
         alt=""
@@ -23,7 +23,7 @@ const Hero = ({pageInfo}: Props) => {
 
       <div className="z-20">
         <div className="text-sm uppercase tracking-[15px] text-gray-500 pb-2">
-          Software Engineer
+          {pageInfo?.role}
         </div>
         <div className="text-4xl lg:text-6xl font-semibold tracking-wide">
           <Typewriter
