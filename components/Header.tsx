@@ -9,6 +9,8 @@ type Props = {
 };
 
 const Header = ({ socials }: Props) => {
+  console.log('socials', socials);
+  
   return (
     <div className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center ">
       <motion.div
@@ -28,14 +30,14 @@ const Header = ({ socials }: Props) => {
         className="flex flex-row items-center"
       >
         <>
-        {socials.map((social) => {
+        {socials.map((social) => (
           <SocialIcon
             key={social._id}
             url={social.url}
             fgColor="gray"
             bgColor="transparent"
-          />;
-        })}
+          />
+        ))}
         </>
       </motion.div>
 
@@ -55,11 +57,6 @@ const Header = ({ socials }: Props) => {
         }}
         className="flex flex-row items-center"
       >
-        <SocialIcon
-          url="https://www.instagram.com/_bad_captain__0_0/?next=%2Fgdsc_au%2F"
-          fgColor="gray"
-          bgColor="transparent"
-        />
 
         <Link href="#contact">
           <SocialIcon

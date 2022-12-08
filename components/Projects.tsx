@@ -1,13 +1,13 @@
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Project } from "../pages/api/typings";
+import { urlFor } from "../pages/api/sanity";
 
 type Props = {
-  projects:Project[];
+  projects: Project[];
 };
 
-const Projects = ({projects}: Props) => {  
+const Projects = ({ projects }: Props) => {
   return (
     <>
       <motion.div
@@ -28,10 +28,27 @@ const Projects = ({projects}: Props) => {
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
               >
-                <Image src="/vishnu.jpg" alt="" width="200" height="200" />
+                <img
+                  src={urlFor(project?.image).url()}
+                  alt=""
+                  width="200"
+                  height="200"
+                />
               </motion.div>
               <div className="text-4xl font-sans font-semibold">
-                <div>Case Study {i + 1} of 0: {project?.title} </div>
+                <div>
+                  Case Study {i + 1} of 0: {project?.title}{" "}
+                </div>
+
+                <div className="flex items-center space-x-2 justify-center">
+                  {projects?.map((technology) => (
+                    <img
+                      className="h-10 w-10"
+                      key={technology._id}
+                      src={urlFor(technology.image).url()}
+                    />
+                  ))}
+                </div>
               </div>
               <div className="text-lg text-center md:text-left">
                 {project?.summary}

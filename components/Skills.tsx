@@ -7,12 +7,7 @@ type Props = {
   skills:SkillType[];
 };
 
-const Skills = ({skills}: Props) => {
-  console.log("testing");
-  console.log(skills);
-  
-  
-  
+const Skills = ({skills}: Props) => {  
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
       <motion.div

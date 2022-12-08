@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Skill } from "../pages/api/typings";
+import { urlFor } from "../pages/api/sanity";
 
 type Props = {
   skill:Skill;
@@ -9,9 +9,6 @@ type Props = {
 };
 
 const Skill = ({skill, directionLeft }: Props) => {
-  console.log("im vishnu");
-  
-  console.log(skill);
   
   return (
     <div className="group relative flex cursor-pointer">
@@ -23,8 +20,8 @@ const Skill = ({skill, directionLeft }: Props) => {
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
       >
-        <Image
-          src="/vishnu.jpg"
+        <img
+          src={urlFor(skill?.image).url()}
           alt=""
           height="1000"
           width="1000"

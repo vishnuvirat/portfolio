@@ -7,7 +7,7 @@ export const fetchExperience = async() => {
   const experiences : Experience[] = data.experiences;
 
 
-  // console.log("fetching", socials);
+  console.log("fetching", experiences);
 
   return experiences || null;
   

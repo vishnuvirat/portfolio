@@ -1,9 +1,9 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import BackgroundCircle from "./BackgroundCircle";
-import Image from "next/image";
 import Link from "next/link";
 import { PageInfo } from "../pages/api/typings";
+import { urlFor } from "../pages/api/sanity";
 
 type Props = {
   pageInfo: PageInfo;
@@ -13,9 +13,9 @@ const Hero = ({pageInfo}: Props) => {
   return (
     <div className="flex items-center justify-center h-screen flex-col space-y-8 text-center overflow-hidden">
       <BackgroundCircle />
-      <Image
+      <img
         className="relative rounded-full mx-auto object-cover h-32 w-32"
-        src={"/vishnu.jpg"}
+        src={urlFor(pageInfo?.heroImage).url()}
         height="500"
         width="500"
         alt=""

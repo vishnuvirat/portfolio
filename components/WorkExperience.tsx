@@ -4,10 +4,12 @@ import ExperienceCard from "./ExperienceCard";
 import { Experience } from "../pages/api/typings";
 
 type Props = {
-  experiences:Experience
+  experiences:Experience[]
 };
 
-const WorkExperience = ({experiences}: Props) => {
+function WorkExperience({ experiences }: Props) {
+  console.log('exp', experiences);
+
   return (
     <div className="h-screen flex flex-col relative overflow-hidden text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">
       <motion.div
@@ -21,11 +23,11 @@ const WorkExperience = ({experiences}: Props) => {
 
       <div className="flex w-full space-x-5 p-10 snap-x snap-mandatory overflow-x-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {experiences?.map(experience => (
-          <ExperienceCard key={experience._id} experience = {experience}/>
+          <ExperienceCard key={experience._id} experience={experience} />
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default WorkExperience;
