@@ -1,10 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Skill from "../components/Skillknown"
+import {Skill as SkillType} from "../pages/api/typings"
 
-type Props = {};
+type Props = {
+  skills:SkillType[];
+};
 
-const Skills = (props: Props) => {
+const Skills = ({skills}: Props) => {
+  console.log("testing");
+  console.log(skills);
+  
+  
+  
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center">
       <motion.div
@@ -19,15 +27,8 @@ const Skills = (props: Props) => {
         Hover over a skill for currency profiency
       </div>
       <div className="grid grid-cols-4 gap-6">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+        {skills?.map((skill) => (<Skill key={skill._id} skill={skill} />))}
+        
       </div>
     </div>
   );
