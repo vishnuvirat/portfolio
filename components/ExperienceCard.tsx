@@ -1,15 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { Experience } from "../pages/api/typings";
 
 type Props = {
-  example: string
+  experience: Experience;
 };
 
-const ExperienceCard = (props: Props) => {
+const ExperienceCard = ({ experience }: Props) => {
   return (
-    <div className="flex flex-col items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[700px] snap-center bg-[#292929]
-     p-10 rounded-sm opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden ">
+    <div
+      className="flex flex-col items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[700px] snap-center bg-[#292929]
+     p-10 rounded-sm opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden "
+    >
       <motion.div
         initial={{
           y: -200,
@@ -37,14 +40,15 @@ const ExperienceCard = (props: Props) => {
         <div className="font-bold text-2xl mt-1">Vishnu</div>
         <div className="">Tech used... will display icons</div>
         <div className="uppercase text-gray-300">
-          Started Working... -Ended...
+          {new Date(experience.datestarted)}
+          {experience.isCurrentlyWorkingHere
+            ? "Present"
+            : new Date(experience.dateEnded).toDateString()}
         </div>
         <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary Points</li>
-          <li>Summary Points</li>
-          <li>Summary Points</li>
-          <li>Summary Points</li>
-          <li>Summary Points</li>
+          {experience.points.map((point,i)=>{
+            <li></li>
+          })}
         </ul>
       </div>
     </div>

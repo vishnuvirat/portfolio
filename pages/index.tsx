@@ -44,10 +44,10 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <About pageInfo={pageInfo} />
       </div>
       <div id="experience" className="snap-center">
-        <WorkExperience />
+        <WorkExperience experiences={experiences} />
       </div>
       <div id="skills" className="snap-start">
-        <Skills />
+        <Skills skills={skills} />
       </div>
       <div id="projects" className="snap-start">
         <Projects />

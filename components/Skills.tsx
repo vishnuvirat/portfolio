@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Skill from "../components/Skill";
+import Skill from "../components/Skillknown"
 
 type Props = {};
 
@@ -28,11 +28,6 @@ const Skills = (props: Props) => {
         <Skill />
         <Skill />
         <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-    
       </div>
     </div>
   );
