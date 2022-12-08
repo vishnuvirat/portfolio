@@ -50,7 +50,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <Skills skills={skills} />
       </div>
       <div id="projects" className="snap-start">
-        <Projects />
+        <Projects projects={projects} />
       </div>
       <div id="contact" className="snap-start">
         <ContactMe />
