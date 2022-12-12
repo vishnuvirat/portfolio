@@ -8,7 +8,8 @@ type Props = {
 };
 
 function WorkExperience({ experiences }: Props) {
-  console.log('exp', experiences);
+  console.log('experiences in workExperiences', experiences);
+  
 
   return (
     <div className="h-screen flex flex-col relative overflow-hidden text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center">

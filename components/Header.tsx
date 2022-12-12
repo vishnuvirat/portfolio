@@ -9,7 +9,6 @@ type Props = {
 };
 
 const Header = ({ socials }: Props) => {
-  console.log('socials', socials);
   
   return (
     <div className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center ">
