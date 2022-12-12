@@ -9,7 +9,6 @@ type Props = {
 };
 
 const ExperienceCard = ({ experience }: Props) => {
-  console.log("experience data in experience card", experience);
 
   return (
     <div

@@ -8,7 +8,6 @@ type Props = {
 };
 
 function WorkExperience({ experiences }: Props) {
-  console.log('experiences in workExperiences', experiences);
   
 
   return (
