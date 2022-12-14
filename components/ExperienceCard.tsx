@@ -38,8 +38,8 @@ const ExperienceCard = ({ experience }: Props) => {
         ></img>
       </motion.div>
       <div className="px-0 md:px-10">
-        <div className="text-4xl font-light">CEO of Vinod-sarees</div>
-        <div className="font-bold text-2xl mt-1">Vishnu</div>
+        <div className="text-4xl font-light">{experience?.jobTitle}</div>
+        <div className="font-bold text-2xl mt-1">{experience?.company}</div>
         <div className="flex space-x-2 my-2">
           {experience.technologies.map((technology) => (
             <img
