@@ -30,6 +30,7 @@ const Projects = ({ projects }: Props) => {
               >
                 <img
                   src={urlFor(project?.image).url()}
+                  key={project._id}
                   alt=""
                   width="500"
                   height="500"
