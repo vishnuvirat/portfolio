@@ -49,7 +49,7 @@ const Hero = ({pageInfo}: HeroProps) => {
           <Link href="#skills">
             <button className="herobutton">Skills</button>
           </Link>
-          <Link href="#projecs">
+          <Link href="#projects">
             <button className="herobutton">Projects</button>
           </Link>
         </div>
