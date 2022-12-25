@@ -5,11 +5,11 @@ import Link from "next/link";
 import { PageInfo } from "../pages/api/typings";
 import { urlFor } from "../pages/api/sanity";
 
-type Props = {
+type HeroProps = {
   pageInfo: PageInfo;
 };
 
-const Hero = ({pageInfo}: Props) => {
+const Hero = ({pageInfo}: HeroProps) => {
   return (
     <div className="flex items-center justify-center h-screen flex-col space-y-8 text-center overflow-hidden">
       <BackgroundCircle />

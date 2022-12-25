@@ -18,7 +18,7 @@ function WorkExperience({ experiences }: Props) {
         transition={{ duration: 1.5 }}
         className="text-gray-500 absolute top-24 uppercase tracking-[20px] text-2xl"
       >
-        <div className="">Experience</div>
+        <div>Experience</div>
       </motion.div>
 
       <div className=" flex w-full space-x-5 p-10 snap-x snap-mandatory overflow-x-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
