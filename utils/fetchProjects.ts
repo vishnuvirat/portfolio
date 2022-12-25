@@ -3,9 +3,7 @@ import { sanityClient } from "../lib/sanity";
 import { Project } from "../typings";
 
 export const fetchProjects = async () => {
-  const data = await sanityClient.fetch(projectQuery);
-
-  const projects: Project[] = data.projects;
+  const projects: Project[] = await sanityClient.fetch(projectQuery);
 
   // console.log("fetching", projects);
 

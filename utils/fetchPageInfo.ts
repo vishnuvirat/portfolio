@@ -3,10 +3,8 @@ import { sanityClient } from "../lib/sanity";
 import { PageInfo } from "../typings";
 
 export const fetchPageInfo = async () => {
-  const data = await sanityClient.fetch(pageInfoQuery);
-  const pageInfo: PageInfo = data.pageInfo;
+  const pageInfo: PageInfo = await sanityClient.fetch(pageInfoQuery);
 
-  console.log("pageInfo log", pageInfo);
 
   return pageInfo;
 };
