@@ -1,11 +1,9 @@
-import { PageInfo } from "../pages/api/typings";
+import { pageInfoQuery } from "../lib/queries";
+import { sanityClient } from "../lib/sanity";
+import { PageInfo } from "../typings";
 
 export const fetchPageInfo = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getPageInfo`
-  );
-
-  const data = await res.json();
+  const data = await sanityClient.fetch(pageInfoQuery);
   const pageInfo: PageInfo = data.pageInfo;
 
   console.log("pageInfo log", pageInfo);

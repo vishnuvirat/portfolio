@@ -2,7 +2,7 @@ import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Socials } from "../pages/api/typings";
+import { Socials } from "../typings";
 
 type Props = {
   socials: Socials[];

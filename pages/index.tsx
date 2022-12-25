@@ -14,7 +14,7 @@ import {
   Project,
   Skill,
   Socials,
-} from "../pages/api/typings";
+} from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchExperience } from "../utils/fetchExperience";
 import { fetchSkills } from "../utils/fetchSkills";

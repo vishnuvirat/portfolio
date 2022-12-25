@@ -2,8 +2,8 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import BackgroundCircle from "./BackgroundCircle";
 import Link from "next/link";
-import { PageInfo } from "../pages/api/typings";
-import { urlFor } from "../pages/api/sanity";
+import { PageInfo } from "../typings";
+import { urlFor } from "../lib/sanity";
 
 type HeroProps = {
   pageInfo: PageInfo;

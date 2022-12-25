@@ -1,8 +1,8 @@
 import React from "react";
 // import Image from "next/image";
 import { motion } from "framer-motion";
-import { Experience } from "../pages/api/typings";
-import { urlFor } from "../pages/api/sanity";
+import { Experience } from "../typings";
+import { urlFor } from "../lib/sanity";
 
 type Props = {
   experience: Experience;

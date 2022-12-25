@@ -1,14 +1,10 @@
-import { Experience } from "../pages/api/typings";
+import { sanityClient } from "../lib/sanity";
+import { Experience } from "../typings";
+import { experienceQuery } from "../lib/queries";
 
-export const fetchExperience = async() => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getExperience`);
-
-  const data = await res.json();
-  const experiences : Experience[] = data.experience;
-
-
-
+export const fetchExperience = async () => {
+  const data = await sanityClient.fetch(experienceQuery);
+  const experiences: Experience[] = data.experience;
 
   return experiences || null;
-  
-}
+};
