@@ -36,7 +36,7 @@ const About = ({pageInfo}: Props) => {
           viewport={{ once: true }}
         >
           <img
-            className="border-2 border-red-800 -mb-20 md:mb-0 flex-shrink-0 w-24 h-24 sm:w-48 sm:h-48 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px] "
+            className="border-2 border-red-800 -mb-20 md:mb-0 flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[500px] "
             src={urlFor(pageInfo?.profilePic).url()}
             alt=""
             height="1000"
@@ -47,7 +47,7 @@ const About = ({pageInfo}: Props) => {
           <div className="text-2xl font-semibold md:text-3xl xl:text-5xl">
             Here is a Little Background
           </div>
-          <div className="border-2 border-red-800 text-sm md:max-w-7xl md:mx-auto max-h-60 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80 ">
+          <div className="border-2 border-red-800 text-sm md:max-w-7xl md:mx-auto max-h-44 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80 ">
             {pageInfo?.backgroundInformation}
           </div>
         </div>
