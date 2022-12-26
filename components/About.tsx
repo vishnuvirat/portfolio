@@ -21,7 +21,6 @@ const About = ({pageInfo}: Props) => {
       </motion.div>
     
         <motion.div
-          className=""
           initial={{
             x: -200,
             opacity: 0,

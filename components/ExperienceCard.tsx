@@ -17,7 +17,7 @@ const ExperienceCard = ({ experience }: Props) => {
     >
       <motion.div
         initial={{
-          y: -200,
+          x: -100,
           opacity: 0,
         }}
         transition={{
