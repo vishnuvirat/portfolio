@@ -33,7 +33,7 @@ const Projects = ({ projects }: Props) => {
                 viewport={{ once: true }}
               >
                 <img
-                  className="w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 xl:w-[500px] xl:h-[500px]"
+                  className="w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96"
                   src={urlFor(project?.image).url()}
                   alt=""
                   width="500"
@@ -62,7 +62,7 @@ const Projects = ({ projects }: Props) => {
                   ))}
                 </div>
               </div>
-              <div className=" text-sm sm:text-lg text-center md:text-left">
+              <div className=" border-2 border-white text-sm sm:text-lg text-center h-40 sm:h-auto p-2 sm:overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
                 {project?.summary}
               </div>
             </div>
