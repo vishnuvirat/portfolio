@@ -15,7 +15,7 @@ const About = ({pageInfo}: Props) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className="tracking-[20px] text-gray-500 text-2xl absolute top-24 uppercase"
+        className="tracking-[20px] text-gray-500 text-lg sm:text-2xl absolute top-24 uppercase"
       >
         About
       </motion.div>
@@ -36,7 +36,7 @@ const About = ({pageInfo}: Props) => {
           viewport={{ once: true }}
         >
           <img
-            className="border-2 border-red-800 -mb-20 md:mb-0 flex-shrink-0 w-24 h-24 sm:w-32 sm:h-32 rounded-full object-cover md:rounded-full md:w-40 md:h-40 xl:rounded-none xl:w-[350px] xl:h-[350px]"
+            className="border-2 border-red-800 -mb-20 md:mb-0 flex-shrink-0 w-32 h-32 sm:w-52 sm:h-52 rounded-full object-cover md:rounded-full md:w-40 md:h-40 xl:rounded-none xl:w-[350px] xl:h-[350px]"
             src={urlFor(pageInfo?.profilePic).url()}
             alt=""
             height="1000"

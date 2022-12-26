@@ -16,10 +16,10 @@ const Projects = ({ projects }: Props) => {
         transition={{ duration: 1.5 }}
         className="h-screen relative flex flex-col overflow-hidden text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0 "
       >
-        <div className="absolute tracking-[20px] uppercase top-24 text-gray-500 text-2xl">
+        <div className="absolute tracking-[20px] uppercase top-24 text-gray-500 text-lg sm:text-2xl">
           Projects
         </div>
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
           {projects?.map((project, i) => (
             <div key={project._id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
               <motion.div
@@ -29,13 +29,14 @@ const Projects = ({ projects }: Props) => {
                 viewport={{ once: true }}
               >
                 <img
+                className="w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 xl:w-[500px] xl:h-[500px]"
                   src={urlFor(project?.image).url()}
                   alt=""
                   width="500"
                   height="500"
                 />
               </motion.div>
-              <div className="text-4xl font-sans font-semibold">
+              <div className="text-lg sm:text-2xl lg:text-4xl font-sans font-semibold">
                 <div>
                   Case Study {i + 1} of 0: {project?.title}{project?.linkToBuild}
                 </div>
@@ -43,14 +44,14 @@ const Projects = ({ projects }: Props) => {
                 <div className="flex items-center space-x-2 justify-center p-2">
                   {project?.technologies.map((technology) => (
                     <img
-                      className="h-10 w-10"
+                      className="h-6 w-6 sm:h-10 sm:w-10 lg:h-14 lg:w-14"
                       key={technology._id}
                       src={urlFor(technology.image).url()}
                     />
                   ))}
                 </div>
               </div>
-              <div className="text-lg text-center md:text-left">
+              <div className=" text-sm sm:text-lg text-center md:text-left">
                 {project?.summary}
               </div>
             </div>
