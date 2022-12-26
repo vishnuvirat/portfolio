@@ -11,7 +11,7 @@ type Props = {
 const Header = ({ socials }: Props) => {
   
   return (
-    <div className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center ">
+    <div className="border-2 border-red-700 sticky top-0 sm:p-1 lg:p-4 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center ">
       <motion.div
         initial={{
           x: -500,
@@ -63,7 +63,7 @@ const Header = ({ socials }: Props) => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <div className="hidden md:inline-flex text-sm items-center text-gray-400 capitalize">
+          <div className="border-2 border-red-500 hidden md:inline-flex text-sm items-center text-gray-400 capitalize">
             Get in touch
           </div>
         </Link>

@@ -30,7 +30,7 @@ const ExperienceCard = ({ experience }: Props) => {
         viewport={{ once: true }}
       >
         <img
-          className="rounded-full h-32 w-32 xl:w-[200px] xl:h-[200px] object-cover object-center"
+          className="rounded-full h-20 w-20 sm:h-32 sm:w-32 xl:w-[200px] xl:h-[200px] object-cover object-center"
           alt=""
           src={urlFor(experience?.companyImage).url()}
           height="1000"
@@ -38,24 +38,24 @@ const ExperienceCard = ({ experience }: Props) => {
         ></img>
       </motion.div>
       <div className="px-0 md:px-10">
-        <div className="text-4xl font-light">{experience?.jobTitle}</div>
-        <div className="font-bold text-2xl mt-1">{experience?.company}</div>
+        <div className=" text-lg sm:text-4xl font-light">{experience?.jobTitle}</div>
+        <div className="text-lg font-bold sm:text-2xl mt-1">{experience?.company}</div>
         <div className="flex space-x-2 my-2">
           {experience.technologies.map((technology) => (
             <img
               key={technology._id}
-              className="h-10 w-10 rounded-full"
+              className=" h-6 w-6 rounded-full sm:h-10 sm:w-10 sm:rounded-full"
               src={urlFor(technology?.image).url()}
             ></img>
           ))}
         </div>
-        <div className="uppercase text-gray-300">
+        <div className="text-xs sm:text-xl uppercase text-gray-300">
           {new Date(experience.datestarted).toDateString()} -
           {experience.isCurrentlyWorkingHere
             ? "Present"
             : new Date(experience.dateEnded).toDateString()}
         </div>
-        <ul className="list-disc space-y-4 ml-5 h-56 text-lg pr-5 max-h-96 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
+        <ul className="border-2 border-red-500 w-56 sm:w-full list-disc space-y-4 ml-5 h-56 text-sm sm:text-lg pr-5 max-h-96 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
           {experience.points.map((point, i) => (
             <li key={i}>{point}</li>
           ))}
