@@ -26,11 +26,12 @@ const Header = ({ socials }: Props) => {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center"
+        className="border-2 border-white  flex flex-row items-center"
       >
         <>
         {socials.map((social) => (
           <SocialIcon
+          className="h-6 w-6"
             key={social._id}
             url={social.url}
             fgColor="gray"
