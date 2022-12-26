@@ -40,7 +40,7 @@ const Projects = ({ projects }: Props) => {
                   height="500"
                 />
               </motion.div>
-              <div className="border-2 border-white text-lg sm:text-2xl lg:text-4xl font-sans font-semibold">
+              <div className=" text-lg sm:text-2xl lg:text-4xl font-sans font-semibold">
                 <div className="flex">
                   Case Study {i + 1} of 0: {project?.title}
                   <div>
@@ -52,7 +52,7 @@ const Projects = ({ projects }: Props) => {
                   </div>
                 </div>
 
-                <div className="border-2 border-green-800 flex items-center space-x-2 justify-center p-2 ">
+                <div className="flex items-center space-x-2 justify-center p-2 ">
                   {project?.technologies.map((technology) => (
                     <img
                       className="h-4 w-4 sm:h-6 sm:w-6 lg:h-10 lg:w-10"
@@ -62,7 +62,7 @@ const Projects = ({ projects }: Props) => {
                   ))}
                 </div>
               </div>
-              <div className=" border-2 border-white text-sm sm:text-lg text-center h-40 sm:h-auto p-2 sm:overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
+              <div className=" text-sm sm:text-lg text-center h-40 sm:h-auto p-2 sm:overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
                 {project?.summary}
               </div>
             </div>

@@ -10,7 +10,7 @@ type Props = {
 
 const About = ({pageInfo}: Props) => {
   return (
-    <div className="border-2 border-red-800 h-screen flex flex-col md:flex-row relative text-center md:text-left max-w-7xl mx-auto justify-evenly px-10 items-center">
+    <div className="h-screen flex flex-col md:flex-row relative text-center md:text-left max-w-7xl mx-auto justify-evenly px-10 items-center">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -35,18 +35,18 @@ const About = ({pageInfo}: Props) => {
           viewport={{ once: true }}
         >
           <img
-            className="border-2 border-red-800 -mb-20 md:mb-0 flex-shrink-0 w-32 h-32 sm:w-52 sm:h-52 rounded-full object-cover md:rounded-full md:w-40 md:h-40 xl:rounded-none xl:w-[350px] xl:h-[350px]"
+            className="-mb-20 md:mb-0 flex-shrink-0 w-32 h-32 sm:w-52 sm:h-52 rounded-full object-cover md:rounded-full md:w-40 md:h-40 xl:rounded-none xl:w-[350px] xl:h-[350px]"
             src={urlFor(pageInfo?.profilePic).url()}
             alt=""
             height="1000"
             width="1000"
           ></img>
         </motion.div>
-        <div className="border-2 border-red-800 space-y-10 px-0 md:px-10">
+        <div className="space-y-10 px-0 md:px-10">
           <div className="text-2xl font-semibold md:text-3xl xl:text-5xl">
             Here is a Little Background
           </div>
-          <div className="border-2 border-red-800 text-sm md:max-w-7xl md:mx-auto max-h-44 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80 ">
+          <div className="text-sm md:max-w-7xl md:mx-auto max-h-44 overflow-y-scroll scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80 ">
             {pageInfo?.backgroundInformation}
           </div>
         </div>

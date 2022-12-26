@@ -33,7 +33,7 @@ type Props = {
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
   
   return (
-    <div className="border-4 border-yellow-400 bg-[rgb(36,36,36)] h-screen text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar md:scrollbar-track-gray-400/20 md:scrollbar-thumb-[#F7AB0A]/80">
+    <div className="bg-[rgb(36,36,36)] h-screen text-white snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar md:scrollbar-track-gray-400/20 md:scrollbar-thumb-[#F7AB0A]/80">
       <Head>
         <title>{pageInfo.name} Portfolio</title>
       </Head>
@@ -58,7 +58,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
       </div>
 
       <Link href="#hero">
-        <div className="flex border-2 border-white sticky bottom-16 lg:bottom-5 w-full cursor-pointer">
+        <div className="flex sticky bottom-16 lg:bottom-5 w-full cursor-pointer">
           <div className="flex flex-1"></div>
           <div className="flex items-center justify-center">
             <Image

@@ -11,7 +11,7 @@ type Props = {
 const Header = ({ socials }: Props) => {
   
   return (
-    <div className="border-2 border-red-700 sticky top-0 sm:p-1 lg:p-4 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center ">
+    <div className="sticky top-0 sm:p-1 lg:p-4 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center ">
       <motion.div
         initial={{
           x: -500,
@@ -26,7 +26,7 @@ const Header = ({ socials }: Props) => {
         transition={{
           duration: 1.5,
         }}
-        className="border-2 border-white  flex flex-row items-center"
+        className="flex flex-row items-center"
       >
         <>
         {socials.map((social) => (
