@@ -22,7 +22,7 @@ const ContactMe = (props: Props) => {
       <div className="text-sm border-2 border-white uppercase tracking-[20px] text-gray-500 top-24 absolute sm:text-2xl">
         Contact
       </div>
-      <div className="border-2 border-white flex flex-col">
+      <div className="hidden border-2 border-white lg:flex flex-col">
         <div className="text-lg xl:text-4xl font-semibold text-center">
           I Have got just what you need
         </div>
