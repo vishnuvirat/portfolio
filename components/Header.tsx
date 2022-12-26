@@ -64,7 +64,7 @@ const Header = ({ socials }: Props) => {
             fgColor="gray"
             bgColor="transparent"
           />
-          <div className="border-2 border-red-500 hidden md:inline-flex text-sm items-center text-gray-400 capitalize">
+          <div className="hidden md:inline-flex text-sm items-center text-gray-400 capitalize">
             Get in touch
           </div>
         </Link>
