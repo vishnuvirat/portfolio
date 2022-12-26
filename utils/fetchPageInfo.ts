@@ -5,6 +5,5 @@ import { PageInfo } from "../typings";
 export const fetchPageInfo = async () => {
   const pageInfo: PageInfo = await sanityClient.fetch(pageInfoQuery);
 
-
   return pageInfo;
 };
