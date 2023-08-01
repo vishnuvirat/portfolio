@@ -9,7 +9,7 @@ type HeroProps = {
   pageInfo: PageInfo;
 };
 
-const Hero = ({pageInfo}: HeroProps) => {
+const Hero = ({ pageInfo }: HeroProps) => {
   return (
     <div className="flex items-center justify-center h-screen flex-col space-y-8 text-center overflow-hidden">
       <BackgroundCircle />
@@ -25,7 +25,7 @@ const Hero = ({pageInfo}: HeroProps) => {
         <div className="text-sm uppercase tracking-[15px] text-gray-500 pb-2">
           {pageInfo?.role}
         </div>
-        <div className="text-4xl lg:text-6xl font-semibold tracking-wide">
+        <div className="xs:text-2xl text-4xl lg:text-6xl font-semibold tracking-wide">
           <Typewriter
             options={{
               strings: [

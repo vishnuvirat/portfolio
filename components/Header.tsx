@@ -9,7 +9,6 @@ type Props = {
 };
 
 const Header = ({ socials }: Props) => {
-  
   return (
     <div className="sticky top-0 sm:p-1 lg:p-4 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center ">
       <motion.div
@@ -29,15 +28,15 @@ const Header = ({ socials }: Props) => {
         className="flex flex-row items-center"
       >
         <>
-        {socials.map((social) => (
-          <SocialIcon
-          className="h-6 w-6"
-            key={social._id}
-            url={social.url}
-            fgColor="gray"
-            bgColor="transparent"
-          />
-        ))}
+          {socials.map((social) => (
+            <SocialIcon
+              style={{ height: 50, width: 50 }}
+              key={social._id}
+              url={social.url}
+              fgColor="gray"
+              bgColor="transparent"
+            />
+          ))}
         </>
       </motion.div>
 
@@ -57,7 +56,6 @@ const Header = ({ socials }: Props) => {
         }}
         className="flex flex-row items-center"
       >
-
         <Link href="#contact">
           <SocialIcon
             url="https://mail.google.com/mail/u/0/#inbox"

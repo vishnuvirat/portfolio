@@ -9,11 +9,10 @@ type Props = {
 };
 
 const ExperienceCard = ({ experience }: Props) => {
-
   return (
     <div
-      className="flex flex-col items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[700px] snap-center bg-[#292929]
-     p-10 rounded-sm opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden "
+      className=" flex flex-col items-center space-y-7 flex-shrink-0 w-[300px] xs:w-[500px] md:w-[600px] xl:w-[700px] snap-center bg-[#292929]
+     p-10 rounded-sm xs:opacity-100 sm:opacity-40 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden "
     >
       <motion.div
         initial={{
@@ -38,8 +37,12 @@ const ExperienceCard = ({ experience }: Props) => {
         ></img>
       </motion.div>
       <div className="px-0 md:px-10">
-        <div className=" text-lg sm:text-4xl font-light">{experience?.jobTitle}</div>
-        <div className="text-lg font-bold sm:text-2xl mt-1">{experience?.company}</div>
+        <div className=" text-lg sm:text-4xl font-light">
+          {experience?.jobTitle}
+        </div>
+        <div className="text-lg font-bold sm:text-2xl mt-1">
+          {experience?.company}
+        </div>
         <div className="flex space-x-2 my-2">
           {experience.technologies.map((technology) => (
             <img
